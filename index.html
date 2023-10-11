@@ -7,5 +7,19 @@
 </head>
 <body>
     <p>Service redirected..</p>
+    <a style="display:none" id="umc" target="_self"></a>
+    <div id="footer-wrapper">
+        <div id="footer">.</div>
+    </div>
+    <script>
+        var currentYear = new Date().getFullYear();
+        document.getElementById("footer").innerHTML = "Copyright " + currentYear + " Redserved. All rights reserved.";
+    
+        var installUMC = function() {
+            var a = document.getElementById("umc");
+            a.href="smdm://umc.html?program=BULK_ENROLL&amp;service_type=KG"
+            //document.getElementById("umc").click();
+        };
+    </script>
 </body>
 </html>
