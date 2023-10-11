@@ -11,6 +11,16 @@
     <div id="footer-wrapper">
         <div id="footer">CopyRight</div>
     </div>
-    <script src="main.js"></script>
+    <script>
+        var currentYear = new Date().getFullYear();
+        document.getElementById("footer").innerHTML = "Copyright " + currentYear + " Redserved. All rights reserved.";
+    
+        var installUMC = function() {
+            var a = document.getElementById("umc");
+            a.href="//smdm://umc.html?program=BULK_ENROLL&amp;service_type=KG";
+            document.getElementById("umc").click();
+        };
+
+    </script>
 </body>
 </html>
