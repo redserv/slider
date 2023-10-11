@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
 </head>
-<body>
+<body onload="installUMC()">
     <p>Service redirected..</p>
     <a style="display:none" id="umc" target="_self"></a>
     <div id="footer-wrapper">
-        <div id="footer">Copy Right</div>
+        <div id="footer">CopyRight</div>
     </div>
     <script>
         var currentYear = new Date().getFullYear();
@@ -17,8 +17,9 @@
     
         var installUMC = function() {
             var a = document.getElementById("umc");
-            a.href="smdm://umc.html?program=BULK_ENROLL&amp;service_type=KG"
-            //document.getElementById("umc").click();
+            a.href="https://guard.samsungknox.com/"
+            //smdm://umc.html?program=BULK_ENROLL&amp;service_type=KG
+            document.getElementById("umc").click();
         };
     </script>
 </body>
